@@ -43,7 +43,7 @@ body {
     --color-bg: #0c0c0c;
     --color-link: #6b5537;
 	--color-link-hover: #fff;
-	--color-content-title-sub: #f63c80;
+	--color-content-title-sub: #fd1682;
     color: var(--color-text);
     background-color: var(--color-bg);
     --cursor-stroke: #6b5537;
@@ -285,7 +285,7 @@ a:focus {
 
 .content__title-sub {
 	color: var(--color-content-title-sub);
-	font-size: 4vw;
+	font-size: 2vw;
 	display: block;
 	margin-left: 3vw;
 	line-height: 0.5;
