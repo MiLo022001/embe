@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<license>
+  <version>1.0</version>
+  <product id="mwg">
+    <min-version>7.6.0.0</min-version>
+    <description>Secure Web Gateway License</description>
+    <header>
+      <generator version="2" id="swms">SWMS License Database</generator>
+      <creation-date>2024-09-28</creation-date>
+      <expire-date>2025-08-15</expire-date>
+      <license-id>55411645</license-id>
+      <customer id="17401">CONG TY CO PHAN VIEN THONG FPT(FPT TELECOM)</customer>
+      <seats>1001</seats>
+    </header>
+    <details>
+      <features>
+        <item enabled="false" id="2005">Gateway Antimalware</item>
+        <item enabled="false" id="4031">Identity</item>
+        <item id="4035" enabled="false">OEM Antivirus</item>
+      </features>
+    </details>
+    <signature sha1="3ba1a6fffc17d41cb084cdfe5f2ece356a46d17c">P7CKMKLQjLb51xP2EsFmyEXacZ2Xus3I/i5+4LgYj5goLWfsGMdISbGKlQb0c2qU2wAfTtz6aVRrSLfSVpYdhjbkaGMZ6ePJ7/HbI8U4aoRMEcNANxAxtNvWLzAumYav7hg5rm9Vhjid1+9dv9b56erLBtKl+F6CZjyBfBpYjtwfdZQl+XKRLzZWtIHkzFKhu21RE4cFsBhki5OmwwC3C7s+kBASJOHXxEP/TK9C0YW3/jk5jdRI6kP1fE+Fe0VlETRIdNGRCVHXVceOqpOn5olGvgD1YZ/taVejXDUcTHIj2+MGfGgz5a9tkm/UgOW9ACDW/lzfR/xKw6dywVQNCg==</signature>
+  </product>
+</license>
