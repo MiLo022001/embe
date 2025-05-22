@@ -1,0 +1,51 @@
+kubectl get pods -o wide
+kubectl get deployment
+kubectl get service
+kubectl apply -f web_frontend.yml
+kubectl apply -f web_frontend_service.ymlcat
+curl http://127.0.0.1:32000
+
+
+# web_frontend.yml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-frontend-test-toleration
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+      tolerations:
+      - key: "servicelevel"
+        operator: "Equal"
+        value: "critical"
+        effect: "NoSchedule"
+      nodeSelector:
+        dclocation: hanoi
+
+
+# web_frontend_service.yml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app: nginx
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
