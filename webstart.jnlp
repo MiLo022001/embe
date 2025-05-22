@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://10.99.253.85:4711/Konfigurator/" href="webstart.jnlp">
+	<information>
+		<title>Skyhigh Secure Web Gateway</title>
+		<vendor>Skyhigh Security</vendor>
+		<icon href="images/icon.png"/>
+		<icon href="images/icon.png" kind="shortcut" />
+		<description>Management interface of Skyhigh Secure Web Gateway</description>
+		<description kind="short">Skyhigh Secure Web Gateway
+		</description>
+		<shortcut online="true" install="true">
+			<desktop />
+			<menu submenu="Skyhigh Security">
+				<menu submenu="Skyhigh Secure Web Gateway" />
+			</menu>
+		</shortcut>
+	</information>
+	<resources>
+	 <property name="jnlp.packEnabled" value="true"/>
+	 <j2se version="1.9+" java-vm-args="--add-exports=java.desktop/com.sun.java.swing.plaf.windows=ALL-UNNAMED --add-modules=java.se.ee --add-modules=java.xml.bind  --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.desktop/java.awt.font=ALL-UNNAMED"/>
+	 <j2se version="1.7+" />
+	 <jar href="jar/webstart.jar" download="eager" main="true"/>
+	</resources>
+	<application-desc main-class="com.scur.k.Application"/>
+	<security>
+		<all-permissions />
+	</security>
+</jnlp>
